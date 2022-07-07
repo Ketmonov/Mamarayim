@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// var pen = {
+	// 	color:"red",
+	// 	price:1000
+	// };
+	// alert(pen.color);
+	// alert(pen["price"]);
+	// var pen = new Object();
+	// pen ['color'] = 'red';
+	// pen['price']= 2000;
+	// alert(pen.color);
+	// alert(pen['price']);
+
+
+	function hisobKitob(x,y, opr){
+		this.x=x;
+		this.y=y;
+		if (opr === '+'){
+			return x+y;
+		} else if (opr === '-') {
+			return x-y;
+		}
+		else if (opr === '*') {
+			return x*y;
+		}
+		else if (opr === '/') {
+			return x/y;
+		}
+		else if (opr === '%') {
+			return x%y;
+		}
+		else  {
+			return "There is not such operation";
+		}
+	}
+	var x = parseInt(prompt("Iltimos son kiriting"));
+	var y= parseInt(prompt("Iltimos son kiriting"));;
+	var opr = prompt("Iltimos son kiriting");;
+	var result= hisobKitob(x,y, opr);
+	alert(result);
+</script>
+</body>
+</html>
